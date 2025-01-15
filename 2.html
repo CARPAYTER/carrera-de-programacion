@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo con Logo Animado</title>
+    <style>
+        /* Contenedor del vídeo */
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Estilo del vídeo */
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilo del logo */
+        .logo {
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: auto;
+            animation: moveLogo 5s infinite alternate;
+        }
+
+        /* Animación del logo */
+        @keyframes moveLogo {
+            0% {
+                transform: translateX(-50%) translateY(60px);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+            100% {
+                transform: translateX(-50%) translateY(60px);
+            }
+
+        
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor del vídeo -->
+    <div class="video-container">
+        <!-- Vídeo -->
+        <video autoplay muted loop>
+            <source src="\Users\jhona\OneDrive\Videos\3d3dae195c496fae81574b441fbf9a2c.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de vídeo.
+        </video>
+
+        <!-- Logo animado -->
+        <img src="\Users\jhona\OneDrive\Imágenes\images(1).png" alt="Logo" class="logo">
+    </div>
+
+</body>
+</html>
